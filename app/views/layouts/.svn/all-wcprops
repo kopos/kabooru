@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/app/views/layouts
+END
+articles.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/app/views/layouts/articles.html.erb
+END
+tags.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/app/views/layouts/tags.html.erb
+END
+links.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/app/views/layouts/links.html.erb
+END
+documents.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/app/views/layouts/documents.html.erb
+END
+users.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/app/views/layouts/users.html.erb
+END

@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: document
+
+two:
+  name: article
+
+three:
+  name: link
+
+four:
+  name: comment
+
+five:
+  name: feed

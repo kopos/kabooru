@@ -1,0 +1,54 @@
+<td id="left">
+</td>
+<td id="center">
+  <p>
+    <b>Email:</b>
+    <%=h @user.email_id %>
+  </p>
+
+  <p>
+    <b>Name:</b>
+    <%=h @user.name %>
+  </p>
+
+  <p>
+    <b>First name:</b>
+    <%=h @user.first_name %>
+  </p>
+
+  <p>
+    <b>Last name:</b>
+    <%=h @user.last_name %>
+  </p>
+
+  <p>
+    <b>Telephone:</b>
+    <%=h @user.telephone %>
+  </p>
+
+  <p>
+    <b>Job title:</b>
+    <%=h @user.job_title %>
+  </p>
+
+  <p>
+    <b>Gmail:</b>
+    <%=h @user.gmail_id %>
+  </p>
+
+  <p>
+    <b>Yahoo:</b>
+    <%=h @user.yahoo_id %>
+  </p>
+
+  <p>
+    <b>Skype:</b>
+    <%=h @user.skype_id %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+
+</td>
+<td id="right"></td>

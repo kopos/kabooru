@@ -1,0 +1,21 @@
+class Document < ActiveRecord::Base
+  @@type = 'document'
+  belongs_to :asset
+  belongs_to :user
+
+  def tags
+    self.asset.tags
+  end
+
+  def self.create_safely(name, content, mail_id, tags)
+    asset     = Asset.create_safely(@@type, mail_id, tags)
+    @document = Document.new(:title     => name,
+                             :content   => content, 
+                             :asset_id  => asset.id, 
+                             :user_id   => asset.mail_id,
+                             :version   => 1);
+    @document.save
+    return @document
+  end
+
+end

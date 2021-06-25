@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/performance
+END
+benchmarker
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/performance/benchmarker
+END
+profiler
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/performance/profiler
+END
+request
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/performance/request
+END

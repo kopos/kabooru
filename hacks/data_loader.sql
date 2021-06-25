@@ -1,0 +1,18 @@
+------------------------------------------------------------------------------------------------
+-- To load a binary file from the file system into the blob column of a 
+-- database table use the following command
+--
+-- $ update <table_name> set <blob_column> = LOAD_FILE('path_to_file') where id_column = <id>;
+--
+-- sample:
+-- $ update documents SET content=LOAD_FILE('C:\\Documents and Settings\\XYZ\\My Documents\\Aptana Studio\\kabooru\\Capital_India_June_2006.pdf') where id=4;
+--
+------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+--
+-- To set all users to password 'kabooru'
+-- update users set crypted_password = 'cb589794455234a8c9b19dea87a48e48bb26142c' and password \
+-- = 'kabooru'
+--
+------------------------------------------------------------------------------------------------

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/server
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/script/plugin
+END

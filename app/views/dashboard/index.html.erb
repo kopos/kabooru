@@ -1,0 +1,52 @@
+<td id="left">
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Related Articles</h3>
+      <ul class="list">
+        <% for article in @articles %>
+          <li><%= link_to article.title, article %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+  
+    <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Related Documents</h3>
+      <ul class="list">
+        <% for document in @documents %>
+          <li><%= link_to document.title, document %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>  
+</td>
+
+<td id="center">
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Tags</h3>
+      <% unless @tags.nil?  %>
+        <p>
+          <% @tags.each_pair do |key, val| %>
+            <%= link_to key, Tag.find_by_name(key), :class => "apart", :style => "font-size: #{val*10}px" %>
+          <% end %>
+        </p>
+      <% end %>
+    </div>
+  </div></div></div></div></div></div></div></div>
+</td>
+
+<td id="right">
+    <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Related Links</h3>
+      <ul class="list">
+        <% for link in @links %>
+          <li><%= link_to link.title, link %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+    
+</td>

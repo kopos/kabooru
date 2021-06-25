@@ -1,0 +1,129 @@
+propel:
+ mail:
+  _attributes: { phpName: Mail }
+  id:
+  mailid: varchar
+  email: { type: longvarchar, required: true }
+ user:
+  _attributes: { phpName: User }
+  id:
+  email: { type: varchar(50), required: true }
+  password: { type: varchar(50), required: true }
+ group:
+  _attributes: { phpName: Group }
+  id:
+  name: { type: varchar(50), required: true }
+ permission:
+  _attributes: { phpName: Permissions }
+  id:
+  access: varchar
+ type: { phpName:Type }
+  id:
+  name: varchar
+ asset:
+  _attributes: { phpName: Asset }
+  id:
+  workspace_id: 
+  type_id:
+ class:
+  _attributes: { phpName: Class }
+  id:
+  name: { type: varchar(50), required: true }
+ tag:
+  _attributes: { phpName: Tag }
+  id:
+  name: { type: varchar(100), required: true }
+ user_group: 
+  _attributes: { phpName: UserGroup }
+  user_id:
+  group_id:
+ group_asset:
+  _attributes: { phpName: GroupAsset }
+  group_id:
+  asset_id:
+ asset_permission:
+  _attributes: { phpName: AssetPermission }
+  asset_id:
+  permission_id:
+ asset_class:
+  _attributes: { phpName: AssetClass }
+  asset_id:
+  class_id:
+ asset_tag: 
+  _attributes: { phpName: AssetTag }
+  asset_id:
+  tag_id:
+ activity: 
+  _attributes: { phpName: Activity }
+  asset_id:
+  user_id:
+  time: { type: timestamp, required: true }
+ feed:
+  _attributes: { phpName: Feed }
+  id:
+  asset_id:
+  title: { type: varchar(250), required: true }
+  feeduri: { type: varchar(250), required: true }
+ article:
+  _attributes: { phpName: Article }
+  id:
+  asset_id:
+  user_id:
+  title: { type: varchar(250), required: true }
+  content: { type: longvarchar, required: true }
+  version: { type: integer, required: true }
+  time: timestamp
+ document:
+  _attributes: { phpName: Document }
+  id:
+  asset_id:
+  title: { type: varchar(250), required: true }
+  filename: { type: varchar(250), required: true }
+  content: blob
+  text: longvarchar
+  mime: varchar(50)
+  version: { type: integer, required: true }
+  time: timestamp
+ link:
+  _attributes: { phpName: Document }
+  id:
+  asset_id:
+  user_id:
+  title: { type: varchar(250), required: true }
+  url: { type: varchar(250), required: true }
+ question:
+  _attributes: { phpName: Question }
+  id: 
+  asset_id:
+  user_id:
+  small: varchar
+  big: longvarchar
+ answer:
+  _attributes: { phpName: Answer }
+  id:
+  asset_id:
+  user_id:
+  rating: integer
+  content: longvarchar
+ comment:
+  _attributes: { phpName: Comment }
+  id:
+  asset_id:
+  user_id:
+  content: longvarchar
+ discussion:
+  _attributes: { phpName: Discussion }
+  id:
+  asset_id:
+  mail_id:
+  content: longvarchar
+ workspace:
+  _attributes : { phpName: Workspace }
+  id:
+  name:
+  description: longvarchar
+  type_id:
+ workspace_permissions:
+  _attributes: { phpName: WorkspacePermissions }
+  workspace_id:
+  permission_id:

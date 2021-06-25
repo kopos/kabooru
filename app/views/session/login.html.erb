@@ -1,0 +1,26 @@
+<td id="left"></td>
+<td id="center">
+  <% form_tag do -%>
+    <table class="form-layout">
+      <tbody>
+        <tr>
+          <td align=center colspan=2><center><b>Sign in to Kabooru with your usename and password</b></center></td>
+        </tr>
+        <tr>
+          <td><label for="login">Email</label></td>
+          <td><%= text_field_tag 'login' %></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><%= password_field_tag 'password' %></td>
+        </tr>
+        <tr>
+          <td align=right><%= check_box_tag 'remember_me' %></td>
+          <td>Remember me</td>
+        </tr>
+        <tr><td></td><td><%= submit_tag 'Log in' %></td></tr>
+      </tbody>
+    </table>
+  <% end -%>
+</td>
+<td id="right"></td>

@@ -1,0 +1,7 @@
+class AboutController < ApplicationController
+
+  @test = 'hi'
+  def index
+    render :text => @test
+  end
+end

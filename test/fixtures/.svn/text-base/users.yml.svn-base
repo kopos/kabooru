@@ -1,0 +1,34 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email_id: suman.karthik@spinaxys.com
+  name: Suman Karthik
+  first_name: Suman
+  last_name: Pathapati
+  telephone: 9849 666 293
+  job_title: CoFounder
+  gmail_id: sumankarthik
+  yahoo_id: sumany
+  skype_id: myphoebs
+
+two:
+  email_id: poorna.shashank@spinaxys.com
+  name: Poorna Shashank
+  first_name: Poorna
+  last_name: Kopppachari
+  telephone: 9866 103 874
+  job_title: CoFounder and Designer
+  gmail_id: poorna.shashank
+  yahoo_id: poorna.shashank
+  skype_id: poorna.shashank
+
+three:
+  email_id: rahul.amaram@spinaxys.com
+  name: Amaram Rahul
+  first_name: Rahul
+  last_name: Amaram
+  telephone: 9866 103 844
+  job_title: CoFounder
+  gmail_id: amaramrahul
+  yahoo_id: amaramrahul
+  skype_id: amaramrahul

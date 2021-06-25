@@ -1,0 +1,36 @@
+<td id="left"></td>
+<td id="center">
+  <h1>New link</h1>
+
+  <%= error_messages_for :link %>
+
+  <% form_for(@link) do |f| %>
+    <p>
+      <b>Url</b><br />
+      <%= f.text_field :url %>
+    </p>
+
+    <p>
+      <b>Title</b><br />
+      <%= f.text_field :title %>
+    </p>
+
+    <p>
+      <b>Short desc</b><br />
+      <%= f.text_field :short_desc %>
+    </p>
+
+    <p>
+      <b>Notes</b><br />
+      <%= f.text_field :notes %>
+    </p>
+
+    <p>
+      <%= f.submit "Create" %>
+    </p>
+  <% end %>
+
+  <%= link_to 'Back', links_path %>
+</td>
+<td id="right">
+</td>

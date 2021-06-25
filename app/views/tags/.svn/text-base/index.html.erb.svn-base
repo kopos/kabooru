@@ -1,0 +1,18 @@
+<td id="left"></td>
+<td id="center">
+  <div class="t" style="margin:10px"><div class="b"><div class="l"><div class="r">
+    <div class="bl"><div class="br"><div class="tl"><div class="tr">
+      <div class="docket">
+        <h3>Tags</h3>
+        <p>
+        <% for tag in @tags %>
+        <a href="tags/<%=h tag.id %>"><%=h tag.name %></a> 
+          <% end %>         
+        </p>
+      </div>
+    </div></div></div></div>  </div></div></div></div>
+  <br />
+
+  <%= link_to 'New tag', new_tag_path %>
+</td>
+<td id="right"></td>

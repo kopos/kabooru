@@ -1,0 +1,44 @@
+<td id="left"></td>
+<td id="center">
+    <h1><%=h @document.title %></h1>
+
+  <p>
+    <b>Content:</b>
+    <%=h @document.content %>
+  </p>
+</td>
+<td id="right">
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Meta</h3>
+      <ul class="list">
+        <li><a href="http://127.0.0.1:3000/articles/edit/1">Export as PDF</a></li>
+        <li><a href="http://127.0.0.1:3000/articles/edit/1">Export as DOC</a></li>
+        <li><a href="http://127.0.0.1:3000/articles/edit/1">Download</a></li>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Actions</h3>
+      <ul class="list">
+        <li><%= link_to 'Edit', edit_document_path(@document) %></li>
+        <li><%= link_to 'Destroy', @document, :confirm => 'Are you sure?', :method => :delete %></li>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Tags</h3>
+        <p>
+        <% if @document.tags.nil? == false %>
+        <% for tag in @document.tags %>
+        <a href="tags/<%=h tag.id %>"><%=h tag.name %></a> 
+          <% end %>         
+        </p>
+        <% end %>
+    </div>
+  </div></div></div></div></div></div></div></div>
+</td>

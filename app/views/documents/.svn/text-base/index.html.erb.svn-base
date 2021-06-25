@@ -1,0 +1,33 @@
+<td id="left">
+</td>
+<td id="center">
+  <h1>Listing documents</h1>
+
+  <table>
+    <tr>
+      <th>Title</th>
+    </tr>
+
+  <% for document in @documents %>
+    <tr>
+      <td><%=h document.title %></td>
+      <td><%= link_to 'Show', document %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
+</td>
+<td id="right">
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Meta</h3>
+      <ul class="list">
+        <li><%= link_to 'New document', new_document_path %></li>
+        <li><a href="http://127.0.0.1:3000/#">Export as PDF</a></li>
+        <li><a href="http://127.0.0.1:3000/#">Export as DOC</a></li>
+        <li><a href="http://127.0.0.1:3000/#">Download</a></li>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+</td>

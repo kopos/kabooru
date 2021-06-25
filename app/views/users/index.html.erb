@@ -1,0 +1,29 @@
+<td id="content" colspan=3>
+<ul class="userlist" style="clear:both; width:100%; float:right;">
+  <% for user in @users %>
+  <li class="user">
+    <div class="vt"><div class="b"><div class="l"><div class="r">
+      <div class="bl"><div class="br"><div class="tl"><div class="tr"> 
+        <div class="vcard">
+          <h3><%=h user.name%></h3>
+          <p><em><b><%=h user.job_title %></b></em></p>
+          <div class="telecommunications">
+            <a href="users/get-vcard/<%=h user.id %>"><img src="images/vcard-add.png" alt="download vcard icon"></a>
+            <p class="tel"><b>Phone/Fax:</b> <span class="tel"><span class="value"><%=h user.telephone %></span></p>
+            <p class="email"><b>Email:</b> <a class="value" href="mailto:<%=h user.email_id %>"><%=h user.email_id%></a></p>
+            <p class="email"><b>Gmail:</b> <a class="value" href="mailto:<%=h user.gmail_id %>"><%=h user.gmail_id%></a></p>
+            <p class="email"><b>Yahoo:</b> <a class="value" href="mailto:<%=h user.yahoo_id %>"><%=h user.yahoo_id%></a></p>
+            <p class="email"><b>Skype:</b> <a class="value" href="mailto:<%=h user.skype_id %>"><%=h user.skype_id%></a></p>
+          </div>
+          <div align=right style="margin-right:4px">
+            <%= link_to 'Show', user %> | <%= link_to 'Edit', edit_user_path(user) %> | <%= link_to 'Delete', user, :confirm => 'Are you sure?', :method => :delete %>
+          </div>
+        </div>
+      </div></div></div></div>
+    </div></div></div></div>
+  </li>
+<% end %>
+</ul>
+
+<%= link_to 'New', new_user_path %>
+</td>

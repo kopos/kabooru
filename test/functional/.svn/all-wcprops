@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional
+END
+tags_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/tags_controller_test.rb
+END
+links_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/links_controller_test.rb
+END
+auth_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/auth_controller_test.rb
+END
+documents_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/documents_controller_test.rb
+END
+users_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/users_controller_test.rb
+END
+articles_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/articles_controller_test.rb
+END
+dashboard_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/dashboard_controller_test.rb
+END
+about_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/413/Products/Kabooru/Hysea-Demo/test/functional/about_controller_test.rb
+END

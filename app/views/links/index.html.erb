@@ -1,0 +1,37 @@
+<td id="left">
+</td>
+<td id="center">
+  <h1>Links</h1>
+
+  <ul class="link-list">
+    <% for link in @links %>
+      <li>
+        <a href="links/<%=h link.id %>"><h2 class="link-url"><%=h link.url %></h2></a>
+          <%= link_to 'Edit', edit_link_path(link.id) %> | 
+          <%= link_to 'Delete', link, :confirm => 'Are you sure?', :method => :delete %>
+        <p class="link-shortdesc"><%=h link.title %></p>
+        <p class="link-longdesc"><%=h link.notes %></p>
+        <p class="link-tagcloud"> <span style="color:gray">Tags:</span>
+          <% unless link.tags.nil? %>    
+            <% for tag in link.tags  %>
+              <a href="tags/<%=h tag.id%>/"><%=h tag.name %></a>, 
+            <% end %>
+          <% end %>
+        </p>
+      </li>
+      <% end %>
+  </ul>
+</td>
+<td id="right" valign=top>
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Meta</h3>
+      <ul class="list">
+        <li><%= link_to 'New link', new_link_path %></li>
+        <li><a href="#export_as_pdf">Export as PDF</a></li>
+        <li><a href="#export_as_doc">Export as DOC</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+</td>

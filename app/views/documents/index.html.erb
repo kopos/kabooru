@@ -1,0 +1,36 @@
+<td id="left">
+</td>
+<td id="center">
+  <h1>Documents</h1>
+
+  <ul class="link-list">
+    <% for document in @documents %>
+      <li>
+        <a href="documents/<%=h document.id %>"><h2 class="link-url"><%=h document.title %><%= link_to image_tag(document.icon, :border => 0), "documents/download/#{document.id}" %></h2></a>
+          <%= link_to 'Edit', edit_document_path(document.id) %> | 
+          <%= link_to 'Delete', document, :confirm => 'Are you sure?', :method => :delete %>
+        <p class="link-shortdesc">Created by <%= document.user.name %> on <%= document.created_at %> </p>
+        <p class="link-tagcloud"> <span style="color:gray">Tags:</span>
+          <% unless document.tags.nil? %>    
+            <% for tag in document.tags  %>
+              <a href="tags/<%=h tag.id%>/"><%=h tag.name %></a>, 
+            <% end %>
+          <% end %>
+        </p>
+      </li>
+      <% end %>
+  </ul>
+</td>
+<td id="right">
+  <div class="vt"><div class="b"><div class="l"><div class="r"><div class="bl"><div class="br"><div class="tl"><div class="tr">   
+    <div class="docket">
+      <h3>Meta</h3>
+      <ul class="list">
+        <li><%= link_to 'New document', new_document_path %></li>
+        <li><a href="http://127.0.0.1:3000/#">Export as PDF</a></li>
+        <li><a href="http://127.0.0.1:3000/#">Export as DOC</a></li>
+        <li><a href="http://127.0.0.1:3000/#">Download</a></li>
+      </ul>
+    </div>
+  </div></div></div></div></div></div></div></div>
+</td>
